@@ -50,7 +50,7 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-wrapper {
-    padding: 3vw;
+    padding: var(--site-padding);
     min-height: 100vh;
 }
 @media (max-width: 850px) {
@@ -143,7 +143,7 @@ body {
     margin-top: -10px;
     margin-bottom: 15px;
     font-size: 1.35rem;
-    font-family: var(--font-body);
+    font-family: var(--font-sans-serif);
 }
 
 .site-head-container {
@@ -514,9 +514,15 @@ body {
 /* ---------------------------------------------------------- */
 
 .post-content {
-    max-width: 38em;
+    max-width: var(--post-width);
     margin: 0 auto;
     padding: 6vw 0;
+}
+
+@media (max-width: 985px) {
+    .post-content {
+        max-width: 38em;
+    }
 }
 
 .post-content-header {
@@ -781,14 +787,16 @@ progress.reading-progress-bar[value]::-webkit-progress-value {
 /* ---------------------------------------------------------- */
 
 aside {
-    position: relative;
-    width: 30%;
-    text-align: end;
+    position: absolute;
+    max-width: var(--aside-width);
+    text-align: right;
     border-right: 1px solid #666;
-    padding-right: 0.6em;
-    float: left;
-    margin-left: -33%;
-    margin-right: 0.6em;
+    padding: 0 .6em 0 .6em;
+    left: var(--aside-position);
+    font-family: var(--font-sans-serif);
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-top: 0.45em;
 }
 
 @media (max-width: 985px) {
@@ -796,12 +804,12 @@ aside {
         position: static;
         display: block;
         width: 100%;
+        max-width: fit-content;
         text-align: left;
-        float: initial;
-        margin: 0 0 1em 0;
+        margin: 0 0 1em;
         border-left: 1px solid #666;
         border-right: initial;
-        padding-left: 0.6em;
-        padding-right: initial;
+        padding-left: .6em;
+        padding-right: 0;
     }  
 }

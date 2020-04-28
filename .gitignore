@@ -1,2 +1,7 @@
 node_modules
 dist
+.DS_Store
+assets/built/screen.css
+assets/built/screen.css.map
+assets/built/vars.css
+assets/built/vars.css.map

@@ -3,7 +3,7 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&family=Neuton:ital,wght@0,400;0,700;0,800;1,400&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;0,800;1,400&family=Libre+Franklin:ital,wght@0,300;1,300&display=swap');
 
 @font-face {
     font-family: "Charter";
@@ -45,7 +45,7 @@
     --color-card: #f9f5ed;
 
     /* Fonts */
-    /* --font-sans-serif: 'Rubik', sans-serif; */
+    --font-sans-serif: 'Libre Franklin', sans-serif;
     --font-serif: 'Charter', serif;
     --font-body: 'Charter', Georgia, serif;
     --font-mono: Menlo, Courier, monospace;
@@ -66,4 +66,9 @@
     --margin: 2rem;
     --radius: 0.5rem;
 
+    --post-width: 51vw;
+    --site-padding: 3vw;
+
+    --aside-width: 200px;
+    --aside-position: calc(((100vw - (var(--site-padding) * 2) - var(--post-width) + -2em) / 2) - var(--aside-width));
 }
