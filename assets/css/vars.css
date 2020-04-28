@@ -1,0 +1,69 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&family=Neuton:ital,wght@0,400;0,700;0,800;1,400&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+@font-face {
+    font-family: "Charter";
+    src: url('../fonts/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url('../fonts/charter-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url('../fonts/charter_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url('../fonts/charter_bold_italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+:root {
+
+    /* Colours */
+    --color-primary: #c58787;
+    --color-base: #0c0a0a;
+    --color-border: rgb(185, 151, 151);
+    --color-bg: rgb(255, 246, 229);
+    --color-bg-light: rgb(255, 252, 247);
+    --color-blockquote: #c1c1c1;
+    --color-card: #f9f5ed;
+
+    /* Fonts */
+    /* --font-sans-serif: 'Rubik', sans-serif; */
+    --font-serif: 'Charter', serif;
+    --font-body: 'Charter', Georgia, serif;
+    --font-mono: Menlo, Courier, monospace;
+    --font-light: 100;
+    --font-normal: 400;
+    --font-bold: 700;
+    --font-heavy: 800;
+
+    /* Breakpoints */
+    --xlarge: 1680px;
+    --large: 1280px;
+    --medium: 980px;
+    --small: 740px;
+    --xsmall: 480px;
+
+    /* Sizes */
+    --height: 4rem;
+    --margin: 2rem;
+    --radius: 0.5rem;
+
+}
